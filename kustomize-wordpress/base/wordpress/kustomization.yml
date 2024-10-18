@@ -1,0 +1,4 @@
+resources:
+  - wp-secret.yml 
+  - wp-deploy.yml 
+  - wp-svc.yml

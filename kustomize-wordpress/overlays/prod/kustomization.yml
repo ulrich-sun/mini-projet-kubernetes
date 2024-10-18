@@ -1,0 +1,13 @@
+resources:
+  - ../../base/mysql
+  - ../../base/wordpress 
+patches:
+  - target:
+      group: v1
+      kind: Service
+      name: wp-svc 
+    patch: |
+      - op: replace 
+        path: /spec/ports/0/nodePort
+        value: 30010
+    
